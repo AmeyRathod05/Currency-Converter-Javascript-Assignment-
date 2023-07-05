@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lilita One', cursive;
+    border : none;
+    outline : none;
+
+}
+body {
+     background-color: #00300d;
+
+}
+
+.container h1{
+    font-size: 3.5em;
+    color:chartreuse;
+text-align: center;
+margin-top: 10px;
+}
+
+.wrapper{
+    
+    width: 90%;
+    position: absolute;
+    left: 50px;
+    background-color: white;
+    padding: 2em;
+    border-radius: 2em;
+    margin-top: 10px;
+    
+}
+
+label{
+    display: block;
+    font-weight: 600;
+}
+
+input#amount{
+    font-weight: 400;
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #00300d;
+    color:rgb(134, 46, 207);
+    margin-bottom : 2em;
+    padding: 0.5em;
+
+
+}
+input#amount:focus{
+    color:rgb(134, 46, 207);
+    border-color: chartreuse;
+}
+
+.dropdowns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+
+}
+select{
+    background-color: #00300d;
+    color: chartreuse;
+    width: 100%;
+    padding: 0.6em;
+    font-size: 1em;
+    border-radius: 0.3em;
+    /* appearance: none; */
+
+}
+
+button{
+    cursor: crosshair;
+    position: relative;
+    left: 19em;
+    font-size: 1em;
+    width: 25%;
+    background-color:lightgreen;
+    padding: 1em 0;
+    margin-top : 1em;
+    border-radius: 0.4em;
+    color:rgb(0, 0, 0);
+
+
+}
+button:hover{
+    background-color: #00300d;
+    color:chartreuse;
+}
+
+
+#result{
+    position: relative;
+    left: 5.5em;
+    width: 70%;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 1em;
+    color: #02002c;
+    background-color: lightgreen;
+    padding: 0.8em 0;
+    border-radius: 0.4em;
+    
+}
+
+#result:hover{
+    background-color: #00300d;
+    color:chartreuse;
+
+}
+@media screen and (max-width:480px){
+
+    button{
+
+        position: relative;
+    left: 4em;
+     
+    }
+
+    #result{
+        position: relative;
+        left: 3em;
+    }
+
+    .wrapper{
+            width: 90%;
+            position: absolute;
+            left: 20px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    button{
+    position: relative;
+    left: 14em;
+     
+    }
+}
